@@ -1,5 +1,5 @@
-# README
-# Dev_Camp
+
+# Dev_Camp Application 
 
 > This is  a Ruby on Rails 	5 application that allows users to create there own Dev_Camp
 
