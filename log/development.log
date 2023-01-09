@@ -1345,3 +1345,188 @@ Processing by BlogsController#index as TURBO_STREAM
 Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 3794)
 
 
+Started GET "/" for ::1 at 2023-01-09 14:45:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 478)
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/Pages/home" for ::1 at 2023-01-09 14:46:27 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/Pages/home/about/contact" for ::1 at 2023-01-09 14:47:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home/about/contact"):
+  
+Started GET "/Pages/home/about/contact" for ::1 at 2023-01-09 14:48:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home/about/contact"):
+  
+Started GET "/" for ::1 at 2023-01-09 14:48:22 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 280)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 886)
+
+
+Started GET "/" for ::1 at 2023-01-09 14:49:48 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 478)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/Pages" for ::1 at 2023-01-09 14:49:54 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages"):
+  
+Started GET "/Pages/home" for ::1 at 2023-01-09 14:50:00 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/Pages/home/about/contact" for ::1 at 2023-01-09 14:50:11 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home/about/contact"):
+  
+Started GET "/" for ::1 at 2023-01-09 14:50:20 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | Allocations: 281)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 895)
+
+
+Started GET "/Pages/about" for ::1 at 2023-01-09 14:50:32 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/about"):
+  
+Started GET "/" for ::1 at 2023-01-09 14:53:20 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 478)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/Pages/home" for ::1 at 2023-01-09 14:53:30 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/" for ::1 at 2023-01-09 15:04:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 478)
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/Pages/home" for ::1 at 2023-01-09 15:04:24 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/Pages/home" for ::1 at 2023-01-09 15:06:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/Pages/home" for ::1 at 2023-01-09 15:25:05 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/" for ::1 at 2023-01-09 15:25:17 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 280)
+Completed 200 OK in 2ms (Views: 1.4ms | Allocations: 876)
+
+
+Started GET "/blogs" for ::1 at 2023-01-09 15:25:27 +0530
+  
+SyntaxError (/home/rahul/project/devcamp_portfolio/app/controllers/application_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+class B ActionController
+                        ^
+):
+  
+app/controllers/application_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:5: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/blogs_controller.rb:1:in `<main>'
+Started GET "/blogs" for ::1 at 2023-01-09 15:25:57 +0530
+Processing by BlogsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/index.html.erb:6
+  Rendered blogs/_blog.html.erb (Duration: 0.3ms | Allocations: 221)
+  Rendered blogs/_blog.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered blogs/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 9027)
+  Rendered layout layouts/application.html.erb (Duration: 52.9ms | Allocations: 49648)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 4.7ms | Allocations: 51357)
+
+
+Started GET "/Pages/home" for ::1 at 2023-01-09 15:26:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/Pages/" for ::1 at 2023-01-09 16:04:25 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages"):
+  
+Started GET "/" for ::1 at 2023-01-09 16:04:35 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 19)
+Completed 200 OK in 2ms (Views: 1.0ms | Allocations: 252)
+
+
+Started GET "/Pages/home" for ::1 at 2023-01-09 16:04:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/Pages/home"):
+  
+Started GET "/" for ::1 at 2023-01-09 16:06:36 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 15)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 219)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-09 16:06:48 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2751)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 3525)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-09 16:15:23 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2897)
+Completed 200 OK in 3ms (Views: 2.8ms | Allocations: 3724)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-09 16:16:00 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2913)
+Completed 200 OK in 10ms (Views: 8.5ms | Allocations: 3719)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-09 18:14:50 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 6198)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 20360)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 3.0ms | Allocations: 21926)
+
+
