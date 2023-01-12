@@ -1530,3 +1530,200 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 3.0ms | Allocations: 21926)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1647198560411391120)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSkills (20230109131531)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "skills" ("id" bigserial primary key, "title" character varying, "percent_utilized" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230109131531"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1647198560411391120)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkill Create (0.5ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Rails"], ["percent_utilized", 75], ["created_at", "2023-01-09 13:35:23.623556"], ["updated_at", "2023-01-09 13:35:23.623556"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkill Create (0.3ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "HTML"], ["percent_utilized", 5], ["created_at", "2023-01-09 13:37:17.159492"], ["updated_at", "2023-01-09 13:37:17.159492"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSkill Create (0.2ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Angular"], ["percent_utilized", 10], ["created_at", "2023-01-09 13:37:57.298908"], ["updated_at", "2023-01-09 13:37:57.298908"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSkill Load (0.7ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  [1m[36mSkill Load (1.6ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+Started GET "/" for ::1 at 2023-01-10 15:06:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 478)
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:07:03 +0530
+Processing by PagesController#home as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2349)
+
+
+  
+NameError (uninitialized constant MVC
+
+MVC - model - view - controller 
+^^^):
+  
+app/models/blog.rb:1:in `<main>'
+app/controllers/pages_controller.rb:3:in `home'
+Started GET "/pages/home" for ::1 at 2023-01-10 15:11:01 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (4.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.3ms | Allocations: 5992)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 41078)
+Completed 200 OK in 46ms (Views: 38.5ms | ActiveRecord: 6.1ms | Allocations: 43119)
+
+
+  [1m[36mSkill Load (0.7ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+Started GET "/pages/home" for ::1 at 2023-01-10 15:22:26 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.5ms | Allocations: 3869)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 6259)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 6.7ms | Allocations: 6591)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:22:29 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.7ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3107)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms | Allocations: 3396)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:22:30 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3095)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3375)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:22:30 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3095)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3375)
+
+
+  [1m[36mSkill Load (0.7ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+Started GET "/" for ::1 at 2023-01-10 15:23:46 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | Allocations: 478)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:23:51 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.2ms | Allocations: 6061)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 41297)
+Completed 200 OK in 58ms (Views: 33.2ms | ActiveRecord: 2.3ms | Allocations: 43434)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:26:54 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2611)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 16682)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 1.6ms | Allocations: 18667)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:26:54 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3089)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 3392)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:26:54 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3092)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 3372)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-10 15:26:54 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 751)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3086)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3366)
+
+
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.8ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+Started GET "/pages/home" for ::1 at 2023-01-10 15:31:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.7ms | Allocations: 6237)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 41549)
+Completed 200 OK in 36ms (Views: 29.9ms | ActiveRecord: 2.0ms | Allocations: 45655)
+
+
+Started GET "/" for ::1 at 2023-01-11 10:23:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rahul/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 478)
+Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3337)
+
+
+Started GET "/pages/home" for ::1 at 2023-01-11 10:23:21 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/pages/home.html.erb:5
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6061)
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 41291)
+Completed 200 OK in 82ms (Views: 53.7ms | ActiveRecord: 4.0ms | Allocations: 43428)
+
+
